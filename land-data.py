@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """land-data.py: Loads GeoJSON data into a PostgreSQL database"""
 
 import os
