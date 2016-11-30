@@ -12,6 +12,18 @@ def get_land_files():
             yield(os.path.realpath(file))
 
 
+def import_json_file(file):
+    """
+
+    :param file:
+    :return:
+    """
+    with open(file) as json_file:
+        json_data = json.load(json_file)
+        print(json_data)
+
+
 f = get_land_files()
 for file2 in f:
     print(file2)
+    import_json_file(file2)
